@@ -46,11 +46,17 @@ Content-Type: application/json
 
 {
     "customer_id": "9d0781a0-5978-43a9-bf0c-a65e57aab4b7", 
-    "total_amount": 50000, 
-    "shipping_to": "nyeri"
+    "product_id": "ea420682-5e03-4778-8d04-1caa284a2ba1", 
+    "shipping_to": "nairobi",
+    "quantity": 2, 
+    "unit_price": 500
 }
 
 
-### GET PRODUCTS
+### GET ORDERS
 GET  http://localhost:5500/order
 Content-Type: application/json
+
+
+### GET ORDER DETAILS
+GET  http://localhost:5500/order/96f561b3-bd90-456c-b1f6-6c6885a19a83
